@@ -1,12 +1,12 @@
 'use client';
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
 
 const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   <motion.div
-    variant={fadeIn('up', 'spring', index*0.5, 1)}
-    className='flex md:flex-row flex-col gap-4'
+    variant={fadeIn('up', 'spring', index * 0.5, 1)}
+    className="flex md:flex-row flex-col gap-4"
   >
     <img src={imgUrl} alt="planet-01" className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover" />
     <div className="w-full flex justify-between items-center">
